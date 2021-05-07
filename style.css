@@ -29,6 +29,21 @@ background-color: white;
 #decouvrez{
     text-align: center;
 }
+
+.btn{
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 20px;
+    background: linear-gradient(#ea72da, #9356dc);
+    border-style: hidden;
+    font-size: 16px;
+    color: white;
+    margin: 0px 0px 50px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+  }
+
+  .btn:hover {
+    background: linear-gradient(#ed88e0, #a16be0);
+  }
 .section-fonctionnement{
     display: flex;
     flex-direction: row;
