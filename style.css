@@ -10,6 +10,10 @@ background-color: white;
   font-family: "Shrikhand";
 }
 
+h2{
+    margin: 0px;
+}
+
 
 .logo{
     text-align: center;
@@ -24,6 +28,7 @@ background-color: white;
 .reserver{
     text-align: center;
     background-color: greenyellow;
+    padding-top: 10px;
 }
 
 #decouvrez{
