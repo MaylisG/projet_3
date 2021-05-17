@@ -157,16 +157,39 @@ border-radius: 0px 0px 20px 20px;
   width: 100%;
 }
 
+.icone-coeur{
+  position: relative;
+}
+
 .coeur-vide{
+  position:absolute;
   margin-top: 10px;
   font-size: 24px;
   
 }
-
-.coeur-vide:hover{
-  transition: 0.4s ease-out;
-  background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
+.coeur-plein{
+  color: transparent;
 }
+
+.coeur-plein :hover{
+  background: linear-gradient( #9356dc, #9356dc, #9356dc, orange, orange) right;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+{
+    margin: 0px 10% 0px 10px;
+    margin-right: 10%;
+    min-width: 96%;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 
   .title{
     font-size: 18px;
