@@ -115,10 +115,23 @@ h2{
     padding-top: 40px;
 }
 
+.restaurants a{
+  text-decoration: none;
+}
+
 .section-restaurants{
     background-color: #f6f6f6;
     width: 100%;
-  
+    margin: auto;
+    height: auto;
+  }
+
+  .carte-restaurants{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .section-restaurants a{
@@ -129,23 +142,31 @@ h2{
 .restaurants{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
     align-items: center;
 }
 
-figure {
-    margin: 0px 10% 0px 10px;
-    margin-right: 10%;
-    min-width: 96%;
-    height: 250px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.description{
+  display: flex;
+justify-content: space-between;  
+background-color: white;
+border-radius: 0px 0px 20px 20px;
+}
 
+.figcaption{
+  width: 100%;
+}
+
+.coeur-vide{
+  margin-top: 10px;
+  font-size: 24px;
+  
+}
+
+.coeur-vide:hover{
+  transition: 0.4s ease-out;
+  background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
+}
 
   .title{
     font-size: 18px;
@@ -164,7 +185,7 @@ figure {
   .new{
     border-radius: 10%;
     padding: 5px 10px;
-    margin-left: 35%;
+    margin-left: 60%;
     margin-top: 15px;
     position: absolute;
     background-color: #99e2d0;
@@ -184,9 +205,51 @@ figure {
 .footer {
     background-color:#2c2c2c;
     font-family: "Shrikhand";
-    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
+  }
+
+  .footer-titre{
+    font-family: "Shrikhand";
+    color: white;
+    padding-top: 10px;
+  }
+
+  .footer a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  ul{
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .mentions-legales{
+    padding-left: 30px;
+  }
+
+  .ustensils{
+    color: white;
+    margin-right: 0px;
+  }
+
+  .helping{
+    color: white;
+    margin-right: 0px;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0px;
+  }
+  li{
+    padding-top: 10px;
+  }
+
+  .a{
+    text-decoration: none;
   }
