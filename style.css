@@ -40,7 +40,8 @@ h2{
 
 .titre-fonctionnement{
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #decouvrez{
@@ -108,6 +109,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .titre-restaurants{
@@ -177,20 +179,6 @@ border-radius: 0px 0px 20px 20px;
   font-size: 24px;
 }
 
-{
-    margin: 0px 10% 0px 10px;
-    margin-right: 10%;
-    min-width: 96%;
-    height: 250px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-
   .title{
     font-size: 18px;
     color: black;
@@ -231,12 +219,13 @@ border-radius: 0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
   }
 
   .footer-titre{
     font-family: "Shrikhand";
     color: white;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .footer a{
@@ -275,4 +264,24 @@ border-radius: 0px 0px 20px 20px;
 
   .a{
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 720px) {
+
+    .mentions-legales{
+      padding-left: 0px;
+    }
+
+    .footer{
+      display: flex;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    .fonctionnement{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
   }
