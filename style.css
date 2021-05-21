@@ -164,13 +164,14 @@ border-radius: 0px 0px 20px 20px;
 }
 
 .coeur-vide{
-  position:absolute;
   margin-top: 10px;
   font-size: 24px;
   
 }
 .coeur-plein{
-  color: transparent;
+  position:absolute;
+  margin-top: 10px;
+  font-size: 24px;
 }
 
 .coeur-plein :hover{
