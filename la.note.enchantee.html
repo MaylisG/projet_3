@@ -2,7 +2,8 @@
 <html lang="fr">
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.lanoteenchantee.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
   <title>La note enchantée</title>
@@ -11,8 +12,8 @@
 <body>
   <header>
     <a href="index.html">
-      <div>
-        <h1>ohmyfood</h1>
+      <div class="logo">
+        <img class="ohmyfood" alt="logo-ohmyfood" src="images/logo/ohmyfood.png" />
       </div>
     </a>
     <img src="images/restaurants/la.palette.du.gout.jpg" alt="La palette du goût" />
@@ -26,6 +27,7 @@
       </span>
       <section class="type-menu">
         <h2 class="menu-titre">ENTREES</h2>
+        <div class="menu">
         <div class="plat-titre">
           <h3>Ravioles de foie gras</h3>
           <div class="plat-description">
@@ -36,6 +38,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
           <h3>Caviar osciète</h3>
           <div class="plat-description">
@@ -46,6 +50,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+        </div>
+        <div class="menu">
         <div class="plat-titre">
           <h3>Homard et espuma de...</h3>
           <div class="plat-description">
@@ -56,19 +62,23 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
-            <h3>Foie gras de canard cuit entier</h3>
-            <div class="plat-description">
-              <h4>Confiture de figue et pain toasté</h4>
-              <span class="plat-prix">35€</span>
-            </div>
-            <span class="check-box">
-              <i class="fas fa-check"></i>
-            </span>
+          <h3>Foie gras de canard cuit entier</h3>
+          <div class="plat-description">
+            <h4>Confiture de figue et pain toasté</h4>
+            <span class="plat-prix">35€</span>
           </div>
+          <span class="check-box">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
       </section>
       <section class="type-menu">
         <h2 class="menu-titre">PLATS</h2>
+        <div class="menu">
         <div class="plat-titre">
           <h3>Noix de coquilles Saint-Jacques</h3>
           <div class="plat-description">
@@ -79,6 +89,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
           <h3>Langoustine poêlée</h3>
           <div class="plat-description">
@@ -89,6 +101,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
           <h3>Mijoté de queu de boeuf</h3>
           <div class="plat-description">
@@ -99,9 +113,11 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
       </section>
       <section class="type-menu">
         <h2 class="menu-titre">DESSERTS</h2>
+        <div class="menu">
         <div class="plat-titre">
           <h3>Macaron noisette et chocolat</h3>
           <div class="plat-description">
@@ -112,6 +128,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
           <h3>Baba au rhum revisité</h3>
           <div class="plat-description">
@@ -122,6 +140,8 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
+      <div class="menu">
         <div class="plat-titre">
           <h3>Tarte au citron meringuée</h3>
           <div class="plat-description">
@@ -132,22 +152,25 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
+      </div>
       </section>
+      <div class="boutton-commander">
       <button type="submit" class="btn btn--order">Commander</button>
+    </div>
     </div>
   </section>
   <footer class="footer">
-    <h2 class="footer">ohmyfood</h2>
+    <h2 class="footer-titre">ohmyfood</h2>
     <ul>
       <li>
-        <i class="fas fa-utensils"></i>
-        <a href="">Proposer un restaurant</a>
+        <i class="fas fa-utensils ustensils"></i>
+        <a href="#">Proposer un restaurant</a>
       </li>
       <li>
-        <i class="fas fa-hands-helping"></i>
-        <a href="">Devenir partenaire</a>
+        <i class="fas fa-hands-helping helping"></i>
+        <a href="#">Devenir partenaire</a>
       </li>
-      <li>
+      <li class="mentions-legales">
         <a href="#">Mentions légales</a>
       </li>
       <li>
