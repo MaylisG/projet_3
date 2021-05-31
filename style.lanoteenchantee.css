@@ -37,7 +37,6 @@ header{
     font-size: 24px;
     color: white;
     width: 250px;
-   
     box-shadow: 2px 2px 5px 2px #dddddd;
   }
 
@@ -69,6 +68,15 @@ flex-direction: column;
     box-shadow: 2px 2px 5px 2px #dddddd;
     background-color: white;
     border-radius: 15px;
+  }
+
+  .menu-titre a{
+    font-size: 16px;
+    font-weight: 100;
+    color: #2c2c2c;
+    margin: 25px 6% 20px;
+    text-decoration: none;
+    border-bottom:3px solid #99e2d0;
   }
 
   .plat-titre{
