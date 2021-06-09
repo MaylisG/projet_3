@@ -4,6 +4,122 @@
     margin: auto;
 }
 
+.loader{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  animation-duration: 3s;
+
+}
+
+
+
+.lettre{
+  margin-left: 20px;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+
+}
+
+@keyframes flash{
+  0%{
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+  50%{
+    color: #FF79DA ;
+    text-shadow: #FF79DA ;
+  }
+
+  100%{
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+
+.lettre:nth-child(1){
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+  animation-delay: 0.8s;
+}
+
+.fondu-out{
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+.loading{
+  margin:auto;
+  margin-top: 350px;
+  border: 5px solid #bdc3c7;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: chargeur 4s linear infinite;
+}
+
+@keyframes chargeur {
+  0%{
+    transform: rotate(0deg) scale(1);
+    border-top-color: #9356DC ;
+    border-right-color:#FF79DA  ;
+    border-bottom-color:#99E2D0 ;
+    border-left-color:#9356DC ;
+  }
+  25%{
+    transform:translateX(10%) scale(1.1);
+    border-top-color: #99E2D0 ;
+    border-right-color:#FF79DA  ;
+    border-bottom-color:#99E2D0 ;
+    border-left-color:#9356DC ;
+  }
+  50% {
+     transform: rotate(360deg) translateX(30%);
+     border-top-color: #9356DC ;
+     border-right-color:#FF79DA  ;
+     border-bottom-color:#99E2D0 ;
+     border-left-color:#FF79DA ;
+  }
+  75%{
+    border-top-color: #99E2D0 ;
+    border-right-color:#FF79DA  ;
+    border-bottom-color:#99E2D0 ;
+    border-left-color:#9356DC ;
+  }
+  100%{
+     transform: rotate(720deg) scale(1);
+     border-top-color: #FF79DA ;
+     border-right-color:#99E2D0  ;
+     border-bottom-color:#FF79DA  ;
+     border-left-color:#9356DC ;
+  }
+  
+}
 h1 {
 background-color: white;
   color: black;
@@ -53,9 +169,10 @@ h2{
   padding: 15px 20px;
   background: linear-gradient(#ea72da, #9356dc);
   border-style: hidden;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   width: 250px;
+ margin-bottom: 20px;
   box-shadow: 2px 2px 5px 2px #dddddd;
   transform: scale(1);
   transition-property: transform;
@@ -164,29 +281,85 @@ border-radius: 0px 0px 20px 20px;
   width: 100%;
 }
 
-.icone-coeur{
-position: relative;
+
+
+
+
+.menu-btn {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient( #9356dc, blue);
 }
 
-.coeur-vide{
-  margin-top: 10px;
-  font-size: 24px;
-  
-}
-.coeur-plein{
-  color: red;
-  transform: scale(0);
+
+.menu-btn::before {
+  opacity: 0;
+  transition: 2000ms;
+  content: "";
   position: absolute;
-  margin-top: 10px;
-  font-size: 24px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient( #9356dc, blue); }
+
+.menu-like {
+  transition-duration: .25s;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten; }
+
+  .menu-btn:hover .menu-like--noBg {
+    opacity: 0; }
+
+.icone_heart{
+  font-size: 30px;
+ margin-top: 10px;
+}
+.fa-heart:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 0.8s linear;
+  font-weight: 900;
 }
 
-.coeur-plein :hover{
-  background: linear-gradient( #9356dc, #9356dc, #9356dc, orange, orange) right;
-  margin-top: 10px;
-  font-size: 24px;
-  transition : transform 1s linear;
-}
+    .icone-coeur {
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .coeur-plein{
+      transform: scale(0);
+      position: absolute;
+    }
+    .coeur-plein :hover{
+      background-color: (#9356dc, blue);
+    }
+
+    .icone-coeur .coeur-plein{
+    
+      background-color: (#9356dc, blue);
+
+    }
+    
+    
 
   .title{
     font-size: 18px;
