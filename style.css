@@ -2,6 +2,19 @@
     font-family: "Roboto", sans-serif;
     width: 100%;
     margin: auto;
+    animation: apparition 3s;
+}
+@keyframes apparition{
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  z-index: 1;
 }
 
 .loader{
@@ -13,9 +26,22 @@
   align-items: center;
   position: fixed;
   z-index: 100;
-  animation-duration: 3s;
-
+  animation: loading 3s;
 }
+
+@keyframes loading{
+  0% {
+    opacity 1;
+  }
+  80%{
+    opacity 1;
+  }
+  100%{
+    opacity 0;
+  }
+}
+
+
 
 
 
@@ -281,85 +307,28 @@ border-radius: 0px 0px 20px 20px;
   width: 100%;
 }
 
-
-
-
-
-.menu-btn {
-  height: 2rem;
-  width: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background: linear-gradient( #9356dc, blue);
-}
-
-
-.menu-btn::before {
-  opacity: 0;
-  transition: 2000ms;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient( #9356dc, blue); }
-
-.menu-like {
-  transition-duration: .25s;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten; }
-
-  .menu-btn:hover .menu-like--noBg {
-    opacity: 0; }
-
-.icone_heart{
-  font-size: 30px;
- margin-top: 10px;
-}
-.fa-heart:hover {
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  transition: all 0.8s linear;
-  font-weight: 900;
-}
-
     .icone-coeur {
       font-size: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      position: relative;
-      margin-top: 10px;
+      margin-top: 17px;
+      margin-right: 10px;
     }
 
     .coeur-plein{
       transform: scale(0);
       position: absolute;
     }
-    .coeur-plein :hover{
-      background-color: (#9356dc, blue);
+    .coeur-plein:hover{
+      transform: scale(1);
     }
-
-    .icone-coeur .coeur-plein{
-    
-      background-color: (#9356dc, blue);
-
+    .coeur-vide:hover {
+      transform: scale(1);
+      background: linear-gradient(#9356dc, #ff79da);
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+      font-weight: 900;
+      transition: all 0.8s linear;
     }
-    
-    
 
   .title{
     font-size: 18px;
