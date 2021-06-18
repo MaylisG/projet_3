@@ -10,7 +10,12 @@ header{
 }
 
 .restaurant-nom{
-    font-family: "Shrikhand";
+  font-size: 27px;
+  font-weight: 500;
+  color: black;
+  margin: 5px;
+  font-family: "Shrikhand";
+  margin: 30px 6% 0px;
 }
 
 
@@ -20,10 +25,22 @@ header{
     object-fit: cover;
 }
 
-.logo{
-    text-align: center;
+.fleche-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fleche{
+    color: #2c2c2c;
+    padding-left: 20px;
+    position : absolute;
+    left: 1%;
+   
 }
 
+.logo-ohmyfood{
+    text-align: center;
+}
 
 .boutton-commander{
     text-align: center;
@@ -38,10 +55,52 @@ header{
     color: white;
     width: 250px;
     box-shadow: 2px 2px 5px 2px #dddddd;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
   }
+
 
   .btn:hover {
     background: linear-gradient(#ed88e0, #a16be0);
+    transform: scale(1.15);
+  }
+
+
+  .icone-coeur {
+    font-size: 30px;
+    margin-top: -30px;
+    padding-right: 100px;
+   
+  }
+  
+  .coeur-plein{
+    position: absolute;
+    transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transition: transform 1s linear;
+  transition: transform 1s linear;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 2;
+  }
+  
+  .coeur-vide{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    overflow: hidden;
+  }
+  .icone-coeur:hover .coeur-plein{
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+  }
+  
+  .icone-coeur:hover .coeur-vide{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  
   }
 
   .main-section{
