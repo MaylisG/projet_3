@@ -15,8 +15,11 @@ header{
   color: black;
   margin: 5px;
   font-family: "Shrikhand";
-  margin: 30px 6% 0px;
+  margin-left: 40%;
 }
+
+
+
 
 
 .image-restaurant{
@@ -53,7 +56,7 @@ header{
     border-style: hidden;
     font-size: 24px;
     color: white;
-    width: 250px;
+    width: 200px;
     box-shadow: 2px 2px 5px 2px #dddddd;
     transform: scale(1);
     transition-property: transform;
@@ -69,7 +72,7 @@ header{
 
   .icone-coeur {
     font-size: 30px;
-    margin-top: -30px;
+    padding-top: 10px;
     padding-right: 100px;
    
   }
@@ -110,24 +113,28 @@ header{
     top: -50px;
    
   }
-
-.menus{
+  .entete-restaurant{
+    padding-bottom: 15px;
+    padding-top: 1%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-  .type-menu{
-display: flex;
-flex-direction: column;
+    justify-content: space-between;
+
   }
 
-  .menu{
+
+  
+
+ /*
+
+  .menu1{
     padding: 0px 30px 0px 10px;
     margin: 15px;
     box-shadow: 2px 2px 5px 2px #dddddd;
     background-color: white;
     border-radius: 15px;
   }
+
+  */
 
   .menu-titre a{
     font-size: 16px;
@@ -138,23 +145,139 @@ flex-direction: column;
     border-bottom:3px solid #99e2d0;
   }
 
-  .plat-titre{
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    margin-top: -5px;
+   
+
+/*
+
+  .menu1:hover .plat-titre {
+    animation: move-price 0.5s;
+  }
+  @keyframes move-price {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-right: 20%;
+    }
   }
 
-  .plat-description{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: -30px;
+  .menu1:hover .fa-check-circle {
+    animation: check-rotate 0.5s;
   }
+  @keyframes check-rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(200deg);
+    }
+  }
+
+  */
+  
+  .menu1{
+    display: flex;
+    background-color: white;
+    margin: auto;
+    width: 97%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  
+      }
+    
+      .plat-titre1{
+        flex-grow: 1;
+        width: 300px;
+        margin-left: 20px;
+      }
+    
+      .plat-titre1 p, .plat-titre1 h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+      }
+    
+      .plat-prix1{
+        align-self: center;
+        margin-right: 25px;
+    
+      }
+    
+      .fa-check-circle{
+        margin: auto;
+        font-size: xx-large;
+        -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+
+     
+      }
+    
+      .check-box1{
+        display: flex;
+        background-color: #99e2d0;
+        color: white;
+        width: 0;
+        transition: all 1s;
+      }
+    
+      .menu1:hover > .check-box1{
+        width: 50px;
+        animation: check-appear 0.5s;
+      }
+
+      .menu1:hover > .check-box1 .fa-check-circle{
+        width: 50px;
+        animation: check-appear 0.5s;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      
+      /*
+      @keyframes check-appear {
+        from {
+          margin-left: 90%;
+        }
+        to {
+          margin-left: 80%;
+        }
+      }
+    */
+    
+      .menu1:hover > .plat-prix1{
+        animation: move-price 0.5s;
+      }
+
+      /*
+      @keyframes move-price {
+        from {
+          margin-right: 0%;
+        }
+        to {
+          margin-right: 80%;
+        }
+      }
+    
+      .menu1:hover .fa-check-circle{
+        animation: check-rotate 0.8s;
+      }
+      @keyframes check-rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1200deg);
+        }
+      }
+        */
+
   .h4{
     font-size: 15px;
     font-weight: 300; 
@@ -225,9 +348,7 @@ flex-direction: column;
     .mentions-legales{
       padding-left: 0px;
     }
-    .btn{
-        width: 30%;
-    }
+   
 
     .footer{
       display: flex;
@@ -235,4 +356,32 @@ flex-direction: column;
       padding-left: 30px;
     }
 
+    .restaurant-nom{
+      margin-left: 30px;
+    }
+
+    .icone-coeur{
+      padding-right: 20px;
+    }
+
+    .menu1{
+     
+      width: 93%;
+    
+        }
+
   }
+  @media screen and (max-width: 768px) {
+    .icone-coeur{
+      padding-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .icone-coeur{
+      padding-right: 20px;
+    }
+
+  }
+
+ 
