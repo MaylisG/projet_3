@@ -434,7 +434,7 @@ z-index: 2;
   }
 
   .new{
-    margin-left: 35%;
+    margin-left: 25%;
   }
 
   .lettre{
@@ -471,6 +471,6 @@ z-index: 2;
   @media screen and (max-width: 768px) {
 
     .new{
-      margin-left: 53%;
+      margin-left: 45%;
     }
   }
