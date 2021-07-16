@@ -117,7 +117,7 @@
   }
   50%{
     color: #FF79DA ;
-    text-shadow: #FF79DA ;
+    text-shadow: 0 0 7px #FF79DA ;
   }
 
   100%{
@@ -273,10 +273,7 @@ h2{
   
 
 .restaurants{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    align-items: center;
+    width: 70%; 
 }
 
 .description{
@@ -304,7 +301,6 @@ border-radius: 0px 0px 20px 20px;
 -webkit-transition: transform 1s linear;
 transition: transform 1s linear;
 background: linear-gradient(#9356dc, #ff79da);
-background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
 z-index: 2;
@@ -345,7 +341,7 @@ z-index: 2;
     border-radius: 10%;
     padding: 5px 10px;
     margin-left: 60%;
-    margin-top: 15px;
+    margin-top: 30px;
     position: absolute;
     background-color: #99e2d0;
     color: #2c9c81;
