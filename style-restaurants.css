@@ -167,7 +167,7 @@ header{
   .menu-titre{
     font-size: 16px;
     font-weight: 100;
-    color: #c2c2c2;
+    color: black;
     margin: 25px 6% 20px;
     text-decoration: none;
     border-bottom:3px solid #99e2d0;
@@ -316,6 +316,8 @@ header{
         flex-direction: column;
         justify-content: center;
     }
+
+  
 
     .mentions-legales{
       padding-left: 0px;
