@@ -191,7 +191,7 @@ h2{
 
 .btn:hover {
   background: linear-gradient(#ed88e0, #a16be0);
-  transform: scale(1.15);
+ 
 }
 
   .filtre{
@@ -303,7 +303,6 @@ transition: transform 1s linear;
 background: linear-gradient(#9356dc, #ff79da);
 -webkit-background-clip: text;
 color: transparent;
-z-index: 2;
 }
 
 .coeur-vide{
